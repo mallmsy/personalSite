@@ -32,10 +32,6 @@ header {
   margin-bottom: 2.5rem;
 }
 
-.menu {
-  float: right;
-}
-
 .header__text-box {
   position: absolute;
 
@@ -53,7 +49,7 @@ header {
 
 .heading-primary--main {
   display: block;
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 400;
   letter-spacing: 1rem;
 
@@ -69,6 +65,44 @@ header {
   animation: moveInRight 1s ease-out;
 }
 
+.about {
+  height: 15vh;
+  margin-bottom: 2.5rem;
+}
+
+.about__text-box {
+  color: rgb(92, 78, 78)
+}
+
+.about img {
+  width: 15rem;
+  position: absolute;
+  right: 5%;
+  top: 35%;
+  margin: 2rem;
+}
+
+.contact {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 5vh;
+  background-color: rgba(236, 112, 81, 0.80);
+  margin-bottom: 2rem;
+}
+
+.contact__item {
+  margin: 0 1rem 0 1rem;
+  color: #fff;
+}
+
+
+.projects__text-box {
+  color: rgb(92, 78, 78)
+}
 
 @keyframes moveInLeft {
   0% {
