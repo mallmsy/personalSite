@@ -1,36 +1,45 @@
+/* COLORS:
+light pink: #FFF1EA
+dark pink: #F4C4BE
+orange pink: #FFB08B */
+
+
 * {
   margin: 0;
   padding: 0;
-
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   font-family: 'Source Code Pro', monospace;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-
-  padding: 30px;
+  font-size: 1.6rem;
+  padding: 3rem;
 }
 
 header {
-  height: 75vh;
+  height: 35vh;
   background-image: linear-gradient(
     to right bottom,
-    rgb(218, 144, 47, 0.8), rgb(238, 97, 6, 0.8)),
-    url(img/bw.jpg);
+    rgb(244, 196, 190, 0.8), rgb(247, 176, 139, 0.8)),
+    url(img/triangles.jpg);
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
-  /* clip-path: ellipse(40% 40% at 50% 50%); */
-
-  margin-bottom: 25px;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  margin-bottom: 2.5rem;
 }
 
-.text-box {
+.menu {
+  float: right;
+}
+
+.header__text-box {
   position: absolute;
 
-  top: 40%;
+  top: 20%;
   left: 50%;
 
   transform: translate(-50%, -50%);
@@ -42,20 +51,20 @@ header {
   text-transform: uppercase;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   display: block;
-  font-size: 55px;
+  font-size: 5rem;
   font-weight: 400;
-  letter-spacing: 15px;
+  letter-spacing: 1rem;
 
   animation: moveInLeft 1s ease-out;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: 700;
-  letter-spacing: 17.4px;
+  letter-spacing: 1.75rem;
 
   animation: moveInRight 1s ease-out;
 }
@@ -64,11 +73,11 @@ header {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
 
   100% {
@@ -81,11 +90,11 @@ header {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
 
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
 
   100% {
