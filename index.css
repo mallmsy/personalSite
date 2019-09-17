@@ -22,7 +22,7 @@ body {
 }
 
 header {
-  height: 35vh;
+  height: 45vh;
   background-image: linear-gradient(
     to right bottom,
     rgb(244, 196, 190, 0.8), rgb(247, 176, 139, 0.8)),
@@ -35,7 +35,7 @@ header {
 .header__text-box {
   position: absolute;
 
-  top: 20%;
+  top: 25%;
   left: 50%;
 
   transform: translate(-50%, -50%);
@@ -74,11 +74,23 @@ header {
   color: rgb(92, 78, 78)
 }
 
+.about__text-box--text {
+  display: block;
+  width: 75%;
+  text-align: left;
+}
+
+.about__text-box--image {
+  display: block;
+  width: 25%;
+  margin-bottom: 2.5rem;
+}
+
 .about img {
-  width: 15rem;
+  width: 10rem;
   position: absolute;
   right: 5%;
-  top: 35%;
+  top: 40%;
   margin: 2rem;
 }
 
@@ -92,6 +104,8 @@ header {
   height: 5vh;
   background-color: rgba(236, 112, 81, 0.80);
   margin-bottom: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+
 }
 
 .contact__item {
