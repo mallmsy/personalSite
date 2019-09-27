@@ -33,11 +33,6 @@ header {
   margin-bottom: 2.5rem;
 }
 
-/* .u-center-text {
-  max-width: 50rem;
-  text-align: left;
-} */
-
 .header__text-box {
   position: absolute;
 
@@ -56,10 +51,15 @@ header {
 .heading-primary--main {
   display: block;
   font-size: 5rem;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 1rem;
+  transition: transform .3s;
 
   animation: moveInLeft 1s ease-out;
+}
+
+.heading-primary--main:hover {
+  transform: translateY(-1.5rem);
 }
 
 .heading-primary--sub {
@@ -136,6 +136,11 @@ header {
   content: "";
   display: table;
   clear: both;
+}
+
+.footer {
+  height: 10rem;
+  background-color: #FFB08B;
 }
 
 @keyframes moveInLeft {
