@@ -1,7 +1,8 @@
 /* COLORS:
-light pink: #FFF1EA
-dark pink: #F4C4BE
-orange pink: #FFB08B */
+light pink: #FFF1EA // rgb(255, 241, 235)
+dark pink: #F4C4BE // rgb(244, 196, 190)
+orange pink: #FFB08B // rgb(255, 176, 139)
+*/
 
 
 * {
@@ -22,20 +23,25 @@ body {
 }
 
 header {
-  height: 45vh;
+  height: 40vh;
   background-image: linear-gradient(
     to right bottom,
     rgb(244, 196, 190, 0.8), rgb(247, 176, 139, 0.8)),
-    url(img/triangles.jpg);
-  background-size: cover;
+    url(img/dancingLines.gif);
+  background-size: contain;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   margin-bottom: 2.5rem;
 }
 
+/* .u-center-text {
+  max-width: 50rem;
+  text-align: left;
+} */
+
 .header__text-box {
   position: absolute;
 
-  top: 25%;
+  top: 30%;
   left: 50%;
 
   transform: translate(-50%, -50%);
@@ -49,7 +55,7 @@ header {
 
 .heading-primary--main {
   display: block;
-  font-size: 4.5rem;
+  font-size: 5rem;
   font-weight: 400;
   letter-spacing: 1rem;
 
@@ -58,7 +64,7 @@ header {
 
 .heading-primary--sub {
   display: block;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
   letter-spacing: 1.75rem;
 
@@ -71,51 +77,65 @@ header {
 }
 
 .about__text-box {
-  color: rgb(92, 78, 78)
-}
-
-.about__text-box--text {
-  display: block;
-  width: 75%;
-  text-align: left;
-}
-
-.about__text-box--image {
-  display: block;
-  width: 25%;
-  margin-bottom: 2.5rem;
-}
-
-.about img {
-  width: 10rem;
-  position: absolute;
-  right: 5%;
-  top: 40%;
-  margin: 2rem;
+  color: rgb(92, 78, 78);
 }
 
 .contact {
   color: #fff;
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 5vh;
   background-color: rgba(236, 112, 81, 0.80);
   margin-bottom: 2rem;
+  padding: 1.5rem;
   box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
-
 }
 
 .contact__item {
-  margin: 0 1rem 0 1rem;
   color: #fff;
+  display: inline-block;
+  margin-left: 3rem;
+}
+
+.contact__item:hover {
+  color: #FFB08B;
 }
 
 
 .projects__text-box {
   color: rgb(92, 78, 78)
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.heading-secondary {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.col-1-of-2 {
+  width: calc((100% - 4rem) / 2);
+  float: left;
+  margin-right: 2rem;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 @keyframes moveInLeft {
