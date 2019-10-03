@@ -133,7 +133,7 @@ header {
 
 .projects__box--links {
   display: block;
-  align-content: flex-start;
+  text-align: center;
   margin-bottom: 2rem;
 }
 
