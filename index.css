@@ -32,7 +32,7 @@ header {
 .header__text-box {
   position: absolute;
 
-  top: 31%;
+  top: 33%;
   left: 50%;
 
   transform: translate(-50%, -50%);
