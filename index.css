@@ -41,7 +41,7 @@ body {
   width: 25rem;
 
   top: 25%;
-  left: 45%;
+  left: 50%;
 
   transform: translate(-50%, -50%);
 }
@@ -103,7 +103,7 @@ body {
   height: 12rem;
   border-radius: 50%;
   position: absolute;
-  left: 20rem;
+  left: 18rem;
   top: 7rem;
   z-index: 10;
   background-color: #FF7600;
@@ -116,7 +116,7 @@ body {
   height: 8rem;
   border-radius: 50%;
   position: absolute;
-  left: 20rem;
+  left: 15rem;
   top: 13rem;
   z-index: 10;
   background-color: #FF90AD;
@@ -129,7 +129,7 @@ body {
   height: 5rem;
   border-radius: 50%;
   position: absolute;
-  left: 25rem;
+  left: 22rem;
   top: 15rem;
   z-index: 10;
   background-color: #FFF;
@@ -189,7 +189,6 @@ body {
 
 .projects__box {
   text-align: center;
-  background-color: #ff90ad;
 }
 
 .projects__box--primary {
