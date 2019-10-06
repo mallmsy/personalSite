@@ -13,6 +13,14 @@ font-family: 'Emblema One', cursive; */
   --color-black: rgb(92, 78, 78);
 }
 
+a:link {
+  color: #FF7600;
+}
+
+a:visited {
+  color: #FF7600;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -79,6 +87,7 @@ body {
 .heading-secondary {
   font-size: 1.6rem;
   font-weight: 700;
+  font-family: 'Biryani', sans-serif;
   margin-bottom: 2rem;
   color: #FF7600;
   text-align: center;
@@ -189,16 +198,22 @@ body {
 
 .projects__box {
   text-align: center;
-}
-
-.projects__box--primary {
-  display: inline-block;
+  margin-bottom: 5rem;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 2rem;
+  border-bottom: .2rem dashed;
+  border-color: #fff;
 }
 
 .projects__box--links {
+  color: #fff;
   display: block;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.projects__box--links a {
+  padding: 2rem;
 }
 
 .projects__box--secondary {
@@ -209,31 +224,49 @@ body {
 
 .projects__built-with {
   width: 30rem;
-  margin-top: 3rem;
   padding: 2rem;
-  /* background-color: #fff; */
 }
 
+.projects__built-with--ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  align-items: center;
+}
 
 .projects__built-with--li {
-  list-style: none;
-  font-size: 1.6rem;
-  margin-top: 1rem;
+  display: inline-block;
+  background-color: #FF90AD;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
   text-align: center;
+
+  font-size: 1.2rem;
+  margin: 2rem;
   transition: all .2s;
-  color: var(--color-black);
+  color: #fff;
+}
+
+.projects__built-with--li img {
+  height: 95%;
+  width: 95%;
+  padding: 1rem;
+  filter: invert(1);
 }
 
 .projects__built-with--li:hover {
   transform: translateY(-5px);
-  color: var(--color-dark-pink);
-  box-shadow: 0 1rem 2rem rgba($color-black,.2);
+  color: #000;
 }
 
 .projects__visuals {
   display: inline-block;
   width: 50rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
 
 }
 
