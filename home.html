@@ -11,15 +11,13 @@
     <title>Mallory Virginia Woods</title>
   </head>
   <body>
-    <div class="contact-wrapper">
-      <div class="contact">
-        <a href="#contact" class="contact__item">contact</a>
-        <a href="#projects" class="contact__item">projects</a>
-        <a href="https://github.com/mallmsy" target="_blank" class="contact__item">github</a>
-        <!-- <a href="https://medium.com/@malvwoods" target="_blank" class="contact__item">blog</a> -->
+    <div class="nav-wrapper">
+      <div class="nav">
+        <a href="#contact" class="nav__item">contact</a>
+        <a href="#projects" class="nav__item">projects</a>
+        <a href="#resume" class="nav__item">resume</a>
       </div>
     </div>
-
 
     <div class="header-wrapper">
       <header class="header">
@@ -54,167 +52,151 @@
 
         <section id="projects" class="projects">
           <h2 class="heading-secondary">projects</h2>
+          <div class="projects-wrapper">
+            <div class="projects__box">
 
-          <div class="projects__box">
+              <div class="projects__box--primary">
+                <h2 class="heading-tertiary">Symposia</h2>
 
-            <div class="projects__box--primary">
-              <h2 class="heading-tertiary">Symposia</h2>
+                <p class="paragraph">A social news web app that displays articles from opposing political views side by side and allows users to like and comment.</p>
+              </div>
 
-              <p class="paragraph">A social news web app that displays articles from opposing political views side by side and allows users to like and comment.</p>
-            </div>
+              <div class="projects__box--secondary">
+                <div class="projects__visuals">
+                  <div class="iframe-container">
+                    <iframe alt="Symposia video demo" src="https://www.youtube.com/embed/ZF81qzCQwqQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
 
-            <div class="projects__box--secondary">
-              <div class="projects__visuals">
-                <div class="iframe-container">
-                  <iframe alt="Symposia video demo" src="https://www.youtube.com/embed/ZF81qzCQwqQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="projects__box--links">
+                    <p>See the code:</p>
+                    <span><a href="https://github.com/mallmsy/symposia-client" target="_blank" alt="link to front-end">Front-End</a></span>
+                    <span><a href="https://github.com/mallmsy/symposia-api" target="_blank" alt="link to back-end">Back-End</a></span>
+                  </div>
                 </div>
+
+                <div class="projects__built-with">
+                  <h3 class="heading-secondary" style="text-decoration: none;">🛠 Built with:</h3>
+                  <ul class="projects__built-with--ul">
+                    <li class="projects__built-with--li">
+                      <img src="img/logos/React.png" alt="React">
+                      React
+                    </li>
+                    <li class="projects__built-with--li">
+                      <img src="img/logos/Redux.png" alt="Redux">
+                      Redux
+                    </li>
+                    <li class="projects__built-with--li">
+                      <img src="img/logos/Rails.png" alt="Ruby On Rails">
+                      Ruby On Rails
+                    </li>
+                    <li class="projects__built-with--li">
+                      <img src="img/logos/Postgresql.png" alt="PostgreSQL">
+                      PostgreSQL Database
+                    </li>
+                    <li class="projects__built-with--li">
+                      <img src="img/logos/Websockets.png" alt="Websockets">
+                      Web Sockets (ActionCable)</li>
+                  </ul>
+                </div>
+              </div>
+            </div> <!--end of Symposia projects box -->
+
+            <div class="projects__box">
+              <div class="projects__box--primary">
+                <h2 class="heading-tertiary">Top 10</h2>
+
+                <p class="paragraph">A web app that allows users to build a “Top 10” list of albums, then interact through up-vote/down-vote functionality.</p>
+
+              </div>
+
+              <div class="projects__box--secondary">
+
+                <div class="projects__visuals">
+                  <div class="iframe-container">
+                    <iframe alt="Top 10 video demo" src="https://www.youtube.com/embed/T9VyrHxAcek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div class="projects__box--links">
+                    <p>See the code:</p>
+                    <span><a href="https://github.com/mallmsy/Top10-music-client" target="_blank" alt="link to front-end">Front-End</a></span>
+                    <span><a href="https://github.com/mallmsy/Top10-music-api" target="_blank" alt="link to back-end">Back-End</a></span>
+                  </div>
+                </div>
+
+                <div class="projects__built-with">
+                  <h3 class="heading-secondary" style="text-decoration: none;">🛠 Built with:</h3>
+                  <ul class="projects__built-with--ul">
+                    <li class="projects__built-with--li">
+                      <img src="img/logos/JS.png" alt="JavaScript">
+                      Vanilla JavaScript</li>
+                    <li class="projects__built-with--li">
+                      <img src="img/logos/Rails.png" alt="Ruby On Rails">
+                      Ruby On Rails</li>
+                    <li class="projects__built-with--li">
+                      <img src="img/logos/Postgresql.png" alt="PostgreSQL">
+                      PostgreSQL Database</li>
+                  </ul>
+
+                </div>
+
+              </div>
+            </div> <!--end of Top 10 projects box -->
+
+            <div class="projects__box">
+              <div class="projects__box--primary">
+                <h2 class="heading-tertiary">Taskcademy</h2>
+
+                <p class="paragraph">An online learning web app that allows students to manage course progress with drag and drop Kanban functionality.</p>
+              </div>
+
+              <div class="projects__box--secondary">
 
                 <div class="projects__box--links">
                   <p>See the code:</p>
-                  <span><a href="https://github.com/mallmsy/symposia-client" target="_blank" alt="link to front-end">Front-End</a></span>
-                  <span><a href="https://github.com/mallmsy/symposia-api" target="_blank" alt="link to back-end">Back-End</a></span>
+                  <span><a href="https://github.com/mallmsy/Taskcademy-client" target="_blank" alt="link to front-end">Front-End</a></span>
+                  <span><a href="https://github.com/mallmsy/Taskcademy-api" target="_blank" alt="link to back-end">Back-End</a></span>
+                </div>
+
+                <div class="projects__built-with">
+                  <h3 class="heading-secondary" style="text-decoration: none;">🛠 Built with:</h3>
+                  <ul class="projects__built-with--ul">
+                    <li class="projects__built-with--li">
+                      <img src="img/logos/React.png" alt="React">
+                      React
+                    </li>
+                    <li class="projects__built-with--li">
+                      <img src="img/logos/Rails.png" alt="Ruby On Rails">
+                      Ruby On Rails
+                    </li>
+                    <li class="projects__built-with--li">
+                      <img src="img/logos/Postgresql.png" alt="PostgreSQL">
+                      PostgreSQL Database
+                    </li>
+                    <li class="projects__built-with--li">
+                      <img src="img/logos/Dnd.png" alt="Atlassian DnD">
+                      Atlassian Drag & Drop</li>
+                  </ul>
                 </div>
               </div>
-
-              <div class="projects__built-with">
-                <h3 class="heading-secondary" style="text-decoration: none;">🛠 Built with:</h3>
-                <ul class="projects__built-with--ul">
-                  <li class="projects__built-with--li">
-                    <img src="img/logos/React.png" alt="React">
-                    React
-                  </li>
-                  <li class="projects__built-with--li">
-                    <img src="img/logos/Redux.png" alt="Redux">
-                    Redux
-                  </li>
-                  <li class="projects__built-with--li">
-                    <img src="img/logos/Rails.png" alt="Ruby On Rails">
-                    Ruby On Rails
-                  </li>
-                  <li class="projects__built-with--li">
-                    <img src="img/logos/Postgresql.png" alt="PostgreSQL">
-                    PostgreSQL Database
-                  </li>
-                  <li class="projects__built-with--li">
-                    <img src="img/logos/Websockets.png" alt="Websockets">
-                    Web Sockets (ActionCable)</li>
-                </ul>
-              </div>
-
-
-            </div>
-
-
-          </div> <!--end of Symposia projects box -->
-
-          <div class="projects__box">
-            <div class="projects__box--primary">
-              <h2 class="heading-tertiary">Top 10</h2>
-
-              <p class="paragraph">A web app that allows users to build a “Top 10” list of albums, then interact through up-vote/down-vote functionality.</p>
-
-            </div>
-
-            <div class="projects__box--secondary">
-
-              <div class="projects__visuals">
-                <div class="iframe-container">
-                  <iframe alt="Top 10 video demo" src="https://www.youtube.com/embed/T9VyrHxAcek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="projects__box--links">
-                  <p>See the code:</p>
-                  <span><a href="https://github.com/mallmsy/Top10-music-client" target="_blank" alt="link to front-end">Front-End</a></span>
-                  <span><a href="https://github.com/mallmsy/Top10-music-api" target="_blank" alt="link to back-end">Back-End</a></span>
-                </div>
-              </div>
-
-              <div class="projects__built-with">
-                <h3 class="heading-secondary" style="text-decoration: none;">🛠 Built with:</h3>
-                <ul class="projects__built-with--ul">
-                  <li class="projects__built-with--li">
-                    <img src="img/logos/JS.png" alt="JavaScript">
-                    Vanilla JavaScript</li>
-                  <li class="projects__built-with--li">
-                    <img src="img/logos/Rails.png" alt="Ruby On Rails">
-                    Ruby On Rails</li>
-                  <li class="projects__built-with--li">
-                    <img src="img/logos/Postgresql.png" alt="PostgreSQL">
-                    PostgreSQL Database</li>
-                </ul>
-
-              </div>
-
-            </div>
-          </div> <!--end of Top 10 projects box -->
-
-          <div class="projects__box">
-            <div class="projects__box--primary">
-              <h2 class="heading-tertiary">Taskcademy</h2>
-
-              <p class="paragraph">An online learning web app that allows students to manage course progress with drag and drop Kanban functionality.</p>
-            </div>
-
-            <div class="projects__box--secondary">
-
-              <div class="projects__box--links">
-                <p>See the code:</p>
-                <span><a href="https://github.com/mallmsy/Taskcademy-client" target="_blank" alt="link to front-end">Front-End</a></span>
-                <span><a href="https://github.com/mallmsy/Taskcademy-api" target="_blank" alt="link to back-end">Back-End</a></span>
-              </div>
-
-              <div class="projects__built-with">
-                <h3 class="heading-secondary" style="text-decoration: none;">🛠 Built with:</h3>
-                <ul class="projects__built-with--ul">
-                  <li class="projects__built-with--li">
-                    <img src="img/logos/React.png" alt="React">
-                    React
-                  </li>
-                  <li class="projects__built-with--li">
-                    <img src="img/logos/Rails.png" alt="Ruby On Rails">
-                    Ruby On Rails
-                  </li>
-                  <li class="projects__built-with--li">
-                    <img src="img/logos/Postgresql.png" alt="PostgreSQL">
-                    PostgreSQL Database
-                  </li>
-                  <li class="projects__built-with--li">
-                    <img src="img/logos/Dnd.png" alt="Atlassian DnD">
-                    Atlassian Drag & Drop</li>
-                </ul>
-              </div>
-            </div>
-          </div> <!--end of Taskcademy projects box -->
-
+            </div> <!--end of Taskcademy projects box -->
+          </div>
         </section>
 
-        <section>
-          <div class="work-experience">
-            <h2 class="heading-secondary">Work Experience</h2>
-            <div class="work-experience__box">
-              <h3>WeWork (Rise Wellness Club)</h3><span class="location">New York, NY</span>
-              <p>Marketing and Events Lead</p>
-              <p>Jul 2017 - Aug 2018</p>
-            </div>
-
-            <div class="work-experience__box">
-              <h3>Play Ruby USA</h3><span class="location">New York, NY</span>
-              <p>Director of Special Events</p>
-              <p>Sep 2016 - Jun 2017</p>
-            </div>
-
-            <div class="work-experience__box">
-              <h3>Play Ruby USA</h3> <span class="location">New York, NY</span>
-              <p>Communications & Events Manager</p>
-              <p>Sep 2012 - Sep 2016</p>
-            </div>
+        <section class="contact">
+          <div class="contact-wrapper">
+            <h2 class="heading-secondary">contact</h2>
+            <p class="contact__link">p: <a href="#">(303) 358-5893</a></p>
+            <p class="contact__link">e: <a href="mailto:hello@mallorywoods.com" target="_blank">hello@mallorywoods.com</a></p>
+            <p class="contact__link">li: <a href="https://www.linkedin.com/in/mallory-virginia-woods" target="_blank">mallory-virginia-woods</a></p>
+            <p class="contact__link">github: <a href="https://github.com/mallmsy" target="_blank" class="nav__item">mallmsy</a></p>
+            <p class="contact__link">blog: <a href="https://medium.com/@malvwoods" target="_blank" class="contact__item">medium</a></p>
           </div>
 
         </section>
 
         <footer id="contact" class="footer">
-          <h3 class="footer__link">p: <a href="#">(303) 358-5893</a></h3>
-          <h3 class="footer__link">e: <a href="mailto:hello@mallorywoods.com" target="_blank">hello@mallorywoods.com</a></h3>
-          <h3 class="footer__link">li: <a href="https://www.linkedin.com/in/mallory-virginia-woods" target="_blank">mallory-virginia-woods</a></h3>
+          <div class="footer-wrapper">
+            designed & developed by Mallory Woods (2019)
+          </div>
 
         </footer>
 

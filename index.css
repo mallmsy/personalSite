@@ -157,6 +157,7 @@ body {
 }
 
 .about {
+  margin-top: 5rem;
   display: inline-block;
 }
 
@@ -165,24 +166,24 @@ body {
   text-align: center;
 }
 
-.contact-wrapper {
+.nav-wrapper {
   text-align: center;
 }
 
-.contact {
+.nav {
   display: inline-block;
   margin-bottom: 2rem;
   padding: 1.5rem;
 }
 
-.contact__item {
+.nav__item {
   color: #FF7600;
   display: inline-block;
   margin-left: 2rem;
   transition: all .2sec;
 }
 
-.contact__item:hover {
+.nav__item:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba($color-black,.2);
 }
@@ -194,6 +195,16 @@ body {
   padding: 1rem;
   font-family: 'Poppins', sans-serif;
   color: #fff;
+}
+
+.projects {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.projects-wrapper {
+  display: inline-block;
+  width: 30rem;
 }
 
 .projects__box {
@@ -270,10 +281,6 @@ body {
 
 }
 
-.projects_visuals--img {
-  width: 70%;
-}
-
 .iframe-container{
   position: relative;
   width: 100%;
@@ -289,44 +296,46 @@ body {
   height: 100%;
 }
 
-.work-experience {
-text-align: center;
-padding: 2rem;
-background-image: linear-gradient(to bottom right, rgb(255, 255, 255, .6), rgb(252, 133, 106, .6)),
-  url(img/dancingLines.gif);
-background-size: contain;
+
+.contact {
+  margin-top: 5rem;
+  text-align: center;
+
 }
 
-.work-experience__box {
-  margin-top: 2rem;
+.contact-wrapper {
+  display: inline-block;
+  width: 30rem;
+
 }
 
-.location {
-  dispaly: inline-block;
-  font-style: italic;
-}
 
 .footer {
-  font-size: 1.2rem;
+  margin-top: 5rem;
+  font-size: 1rem;
   text-align: center;
-  background-color: var(--color-dark-pink);
-  margin: 2rem 0;
-  padding: 2.5rem;
-  box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
 }
 
-.footer__link {
+.footer-wrapper {
   display: inline-block;
-  margin-left: 3rem;
+  width: 30rem;
+  background-color: #FF7600;
+  margin: 2rem 0;
+  padding: 1rem;
+  color: #fff;
+}
+
+.contact__link {
+  display: inline-block;
   transition: all .2sec;
 }
 
-.footer__link:hover {
+.contact__link:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba($color-black,.2);
+  text-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
 }
 
-.footer__link a {
+.contact__link a {
   color: #fff;
 }
 
