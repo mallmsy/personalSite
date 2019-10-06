@@ -40,7 +40,7 @@ body {
 .header {
   display: inline-block;
   width: 80vw;
-  height: 30vh;
+  height: 30rem;
   margin-bottom: 2.5rem;
 }
 
@@ -300,6 +300,7 @@ body {
 .contact {
   margin-top: 5rem;
   text-align: center;
+  height: 80vh;
 
 }
 
@@ -309,6 +310,23 @@ body {
 
 }
 
+.contact__link {
+  display: inline-block;
+  transition: all .2sec;
+  color: #FF90AD;
+  margin-top: 3rem;
+}
+
+.contact__link:hover {
+  transform: translateY(-3px);
+  text-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+.avatar {
+  margin-top: 2rem;
+  height: 60%;
+  width: 60%;
+}
 
 .footer {
   margin-top: 5rem;
@@ -322,20 +340,6 @@ body {
   background-color: #FF7600;
   margin: 2rem 0;
   padding: 1rem;
-  color: #fff;
-}
-
-.contact__link {
-  display: inline-block;
-  transition: all .2sec;
-}
-
-.contact__link:hover {
-  transform: translateY(-3px);
-  text-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-}
-
-.contact__link a {
   color: #fff;
 }
 
