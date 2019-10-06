@@ -1,2 +1,2 @@
 # Personal Site
-visit at mallorywoods.com
+visit at mallorywoods.dev
