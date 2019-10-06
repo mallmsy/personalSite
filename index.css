@@ -22,6 +22,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   padding: 3rem;
+  background-color: #287646;
 }
 
 .header-wrapper {
@@ -30,14 +31,14 @@ body {
 
 .header {
   display: inline-block;
-  width: 65vw;
+  width: 80vw;
   height: 30vh;
-  background-color: #287646;
   margin-bottom: 2.5rem;
 }
 
 .header__text-box {
   position: absolute;
+  width: 25rem;
 
   top: 25%;
   left: 45%;
@@ -50,7 +51,7 @@ body {
   color: #FF90AD;
   text-transform: uppercase;
   text-align: left;
-  text-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .4);
+  /* text-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .4); */
 }
 
 .heading-primary--main {
@@ -76,18 +77,21 @@ body {
 }
 
 .heading-secondary {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
+  margin-bottom: 2rem;
   color: #FF7600;
   text-align: center;
+  text-decoration: underline;
 }
 
 .heading-tertiary {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-weight: 500;
+  font-family: 'Exo 2', sans-serif;
   text-transform: uppercase;
   text-align: center;
-  color: var(--color-light-orange);
+  color: #ff90ad;
 }
 
 .circles {
@@ -99,11 +103,12 @@ body {
   height: 12rem;
   border-radius: 50%;
   position: absolute;
-  left: 17rem;
-  top: -7rem;
+  left: 20rem;
+  top: 7rem;
   z-index: 10;
   background-color: #FF7600;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .4);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .4);
+  transition: all .2sec;
 }
 
 .circles__pink {
@@ -111,11 +116,12 @@ body {
   height: 8rem;
   border-radius: 50%;
   position: absolute;
-  left: 17rem;
-  top: -2rem;
+  left: 20rem;
+  top: 13rem;
   z-index: 10;
   background-color: #FF90AD;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .4);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .4);
+  transition: all .2sec;
 }
 
 .circles__white {
@@ -123,11 +129,18 @@ body {
   height: 5rem;
   border-radius: 50%;
   position: absolute;
-  left: 22rem;
-  top: 0rem;
+  left: 25rem;
+  top: 15rem;
   z-index: 10;
   background-color: #FFF;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .4);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .4);
+  transition: all .2sec;
+}
+
+.circles__white:hover,
+.circles__pink:hover,
+.circles__orange:hover {
+  transform: scale(1.05) translateY(-.5rem);
 }
 
 .main {
@@ -141,7 +154,6 @@ body {
 .about__text-box {
   width: 30rem;
   text-align: center;
-  color: #287646;
 }
 
 .contact-wrapper {
@@ -157,7 +169,7 @@ body {
 .contact__item {
   color: #FF7600;
   display: inline-block;
-  margin-left: 3rem;
+  margin-left: 2rem;
   transition: all .2sec;
 }
 
@@ -168,21 +180,20 @@ body {
 
 .paragraph {
   font-size: 1.6rem;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   line-height: 1.7;
-  /* font-style: italic; */
   padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
 }
 
 .projects__box {
-  background-color: var(--color-light-pink);
-  margin: 2rem;
-  padding: 1rem;
+  text-align: center;
+  background-color: #ff90ad;
 }
 
 .projects__box--primary {
-  align-items: stretch;
-  text-align: center;
+  display: inline-block;
 }
 
 .projects__box--links {
