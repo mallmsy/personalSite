@@ -48,8 +48,8 @@ body {
   position: absolute;
   width: 25rem;
 
-  top: 30%;
-  left: 50%;
+  top: 33%;
+  left: 48%;
 
   transform: translate(-50%, -50%);
 }
@@ -282,11 +282,11 @@ body {
   box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
   margin-bottom: 2rem;
   border: #fff solid;
-  transition: all .2sec;
+  transition: all .5s ease-in-out;
 }
 
 .projects__visuals--gif:hover {
-  transform: scale(1.75) translate(2rem);
+  transform: scale(1.25);
 
 }
 
