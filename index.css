@@ -1,7 +1,6 @@
 /* font-family: 'Biryani', sans-serif;
 font-family: 'Emblema One', cursive; */
 
-
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +30,7 @@ body {
   font-size: 1.6rem;
   padding: 3rem;
   background-color: #287646;
+  text-align: center;
 }
 
 .header-wrapper {
@@ -40,15 +40,14 @@ body {
 .header {
   display: inline-block;
   width: 80vw;
-  height: 30rem;
-  margin-bottom: 2.5rem;
+  height: 25rem;
 }
 
 .header__text-box {
   position: absolute;
   width: 25rem;
 
-  top: 33%;
+  top: 25%;
   left: 48%;
 
   transform: translate(-50%, -50%);
@@ -112,7 +111,10 @@ body {
   z-index: 10;
   background-color: #FF7600;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .4);
-  transition: all .2sec;
+  /* transition: all .2sec; */
+
+  animation: breathe 3s ease-out;
+  animation-iteration-count: infinite;
 }
 
 .circles__pink {
@@ -125,7 +127,10 @@ body {
   z-index: 10;
   background-color: #FF90AD;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .4);
-  transition: all .2sec;
+  /* transition: all .2sec; */
+
+  animation: breathe 3s ease-out;
+  animation-iteration-count: infinite;
 }
 
 .circles__white {
@@ -138,21 +143,25 @@ body {
   z-index: 10;
   background-color: #FFF;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .4);
-  transition: all .2sec;
+  /* transition: all .2sec; */
+
+  animation: breathe 3s ease-out;
+  animation-iteration-count: infinite;
 }
 
-.circles__white:hover,
+/* .circles__white:hover,
 .circles__pink:hover,
 .circles__orange:hover {
   transform: scale(1.05) translateY(-.5rem);
-}
+} */
 
 .main {
+  display: inline-block;
   text-align: center;
+  max-width: 600px;
 }
 
 .about {
-  margin-top: 5rem;
   display: inline-block;
 }
 
@@ -309,30 +318,40 @@ body {
 .contact {
   margin-top: 5rem;
   text-align: center;
-  height: 80vh;
-
+  height: 60vh;
 }
 
 .contact-wrapper {
   display: inline-block;
   width: 30rem;
-
 }
 
 .contact__link {
   display: inline-block;
-  transition: all .2sec;
   color: #FF90AD;
-  margin-top: 3rem;
+  margin-top: 5px;
 }
 
-.contact__link:hover {
+.contact__link--icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.contact__link--icon {
+  fill: white;
+  width: 4rem;
+  transition: all .2sec;
+  margin: 10px 5px 0 5px;
+}
+
+.contact__link--icon:hover {
   transform: translateY(-3px);
   text-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
 }
 
 .avatar {
-  margin-top: 2rem;
   height: 60%;
   width: 60%;
 }
@@ -378,5 +397,17 @@ body {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1.05) translateY(-.5rem);
+  }
+  50% {
+    transform: scale(1.10) translateY(-.10rem);
+  }
+  100% {
+    transform: scale(1.05) translateY(-.5rem);
   }
 }
