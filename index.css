@@ -35,11 +35,10 @@ body {
 
 .header-wrapper {
   text-align: center;
+  margin: 3rem 0;
 }
 
 .header {
-  display: inline-block;
-  width: 80vw;
   height: 25rem;
 }
 
@@ -86,19 +85,19 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   font-family: 'Biryani', sans-serif;
-  margin-bottom: 2rem;
-  color: #FF7600;
+  margin: 2rem 0;
+  color: #ff90ad;
   text-align: center;
   text-decoration: underline;
+  text-transform: uppercase;
 }
 
 .heading-tertiary {
-  font-size: 2.5rem;
-  font-weight: 500;
-  font-family: 'Exo 2', sans-serif;
-  text-transform: uppercase;
+  font-size: 4.5rem;
+  font-family: 'Biryani', sans-serif;
   text-align: center;
-  color: #ff90ad;
+  color: #FF7600;
+  margin: 3rem 1.5rem;
 }
 
 .circles__orange {
@@ -106,15 +105,15 @@ body {
   height: 12rem;
   border-radius: 50%;
   position: absolute;
-  left: 18rem;
-  top: 7rem;
+  left: 19rem;
+  top: 6rem;
   z-index: 10;
   background-color: #FF7600;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .4);
-  /* transition: all .2sec; */
+  transition: all .2sec;
 
-  animation: breathe 3s ease-out;
-  animation-iteration-count: infinite;
+  /* animation: breathe 3s ease-out;
+  animation-iteration-count: infinite; */
 }
 
 .circles__pink {
@@ -122,15 +121,15 @@ body {
   height: 8rem;
   border-radius: 50%;
   position: absolute;
-  left: 15rem;
-  top: 13rem;
+  left: 17rem;
+  top: 11rem;
   z-index: 10;
   background-color: #FF90AD;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .4);
-  /* transition: all .2sec; */
+  transition: all .2sec;
 
-  animation: breathe 3s ease-out;
-  animation-iteration-count: infinite;
+  /* animation: breathe 3s ease-out;
+  animation-iteration-count: infinite; */
 }
 
 .circles__white {
@@ -138,22 +137,22 @@ body {
   height: 5rem;
   border-radius: 50%;
   position: absolute;
-  left: 22rem;
-  top: 15rem;
+  left: 23rem;
+  top: 16rem;
   z-index: 10;
   background-color: #FFF;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .4);
-  /* transition: all .2sec; */
+  transition: all .2sec;
 
-  animation: breathe 3s ease-out;
-  animation-iteration-count: infinite;
+  /* animation: breathe 3s ease-out;
+  animation-iteration-count: infinite; */
 }
 
-/* .circles__white:hover,
+.circles__white:hover,
 .circles__pink:hover,
 .circles__orange:hover {
   transform: scale(1.05) translateY(-.5rem);
-} */
+}
 
 .main {
   display: inline-block;
@@ -203,19 +202,17 @@ body {
 
 .projects {
   text-align: center;
-  margin-top: 5rem;
+
 }
 
 .projects-wrapper {
   display: inline-block;
-  /* width: 30rem; */
 }
 
 .projects__box {
   text-align: center;
   margin-bottom: 5rem;
   font-family: 'Poppins', sans-serif;
-  padding-bottom: 2rem;
   border-bottom: .2rem dashed;
   border-color: #fff;
 }
@@ -239,14 +236,13 @@ body {
 }
 
 .projects__built-with {
-  width: 30rem;
-  padding: 2rem;
+  width: 100%;
 }
 
 .projects__built-with--ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   list-style: none;
   padding: 0;
   text-align: center;
@@ -257,21 +253,17 @@ body {
 .projects__built-with--li {
   display: inline-block;
   background-color: #FF90AD;
-  height: 8rem;
-  width: 8rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
-  text-align: center;
-
-  font-size: 1.2rem;
-  margin: 2rem;
+  margin: 10px 5px 0 5px;
   transition: all .2s;
+  line-height: 3.5;
   color: #fff;
 }
 
 .projects__built-with--li img {
-  height: 95%;
-  width: 95%;
-  padding: 1rem;
+  width: 2.5rem;
   filter: invert(1);
 }
 
@@ -304,6 +296,7 @@ body {
   width: 100%;
   padding-bottom: 56.25%;
   box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+  margin-bottom: 5rem;
 }
 
 .iframe-container iframe{
@@ -316,9 +309,8 @@ body {
 
 
 .contact {
-  margin-top: 5rem;
   text-align: center;
-  height: 60vh;
+  height: 80vh;
 }
 
 .contact-wrapper {
@@ -356,12 +348,6 @@ body {
   width: 60%;
 }
 
-.footer {
-  margin-top: 5rem;
-  font-size: 1rem;
-  text-align: center;
-}
-
 .footer-wrapper {
   display: inline-block;
   width: 30rem;
@@ -369,6 +355,9 @@ body {
   margin: 2rem 0;
   padding: 1rem;
   color: #fff;
+  margin-top: 5rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
 @keyframes moveInLeft {
@@ -402,12 +391,12 @@ body {
 
 @keyframes breathe {
   0% {
-    transform: scale(1.05) translateY(-.5rem);
+    transform: scale(1.10) translateY(-.2rem);
   }
   50% {
-    transform: scale(1.10) translateY(-.10rem);
+    transform: scale(1.20) translateY(.8rem);
   }
   100% {
-    transform: scale(1.05) translateY(-.5rem);
+    transform: scale(1.10) translateY(-.2rem);
   }
 }
