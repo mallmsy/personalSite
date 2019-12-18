@@ -46,8 +46,8 @@ body {
   position: absolute;
   width: 25rem;
 
-  top: 25%;
-  left: 48%;
+  top: 30%;
+  left: 40%;
 
   transform: translate(-50%, -50%);
 }
@@ -61,7 +61,7 @@ body {
 
 .heading-primary--main {
   display: block;
-  font-size: 5rem;
+  font-size: 6.5rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
   line-height: 0.8;
@@ -105,8 +105,8 @@ body {
   height: 12rem;
   border-radius: 50%;
   position: absolute;
-  left: 19rem;
-  top: 6rem;
+  left: 22rem;
+  top: 11rem;
   z-index: 10;
   background-color: #FF7600;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .4);
@@ -121,8 +121,8 @@ body {
   height: 8rem;
   border-radius: 50%;
   position: absolute;
-  left: 17rem;
-  top: 11rem;
+  left: 18rem;
+  top: 14rem;
   z-index: 10;
   background-color: #FF90AD;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .4);
@@ -138,7 +138,7 @@ body {
   border-radius: 50%;
   position: absolute;
   left: 23rem;
-  top: 16rem;
+  top: 19rem;
   z-index: 10;
   background-color: #FFF;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .4);
@@ -182,7 +182,7 @@ body {
 .nav__item {
   color: #FF7600;
   display: inline-block;
-  margin-left: 2rem;
+  margin: 1rem;
   transition: all .2sec;
 }
 
