@@ -43,9 +43,6 @@
           <h2 class="heading-tertiary">about</h2>
           <div class="about__text-box">
             <p class="paragraph">Hi there! I'm a full-stack engineer with experience in events, digital marketing and graphic design.</p>
-
-            <p class="paragraph">I graduated from Flatiron School in July 2019 and am keeping busy mastering advanced CSS and SCSS and challenging my JS fundamentals with daily algorithms.</p>
-
             <p class="paragraph">When not coding, I'm an unapologetic crazy cat mom, an urban gardner and a passionate political and climate activist.</p>
           </div>
 
@@ -53,15 +50,14 @@
 
         <section id="projects" class="projects">
           <h2 class="heading-tertiary">projects</h2>
+        
+          <!-- BEGIN of Symposia projects box -->
           <div class="projects-wrapper">
             <div class="projects__box">
-
               <div class="projects__box--primary">
                 <h2 class="heading-secondary">Symposia</h2>
-
                 <p class="paragraph">A social news web app that displays articles from opposing political views side by side and allows users to like and comment.</p>
               </div>
-
               <div class="projects__box--secondary">
                 <div class="iframe-container">
                   <iframe alt="Symposia video demo" src="https://www.youtube.com/embed/ZF81qzCQwqQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -72,7 +68,6 @@
                     <span><a href="https://github.com/mallmsy/symposia-api" target="_blank" alt="link to back-end">Back-End</a></span>
                   </div>
                 </div>
-
                 <div class="projects__built-with"></div>          
                   <ul class="projects__built-with--ul">
                     <li class="projects__built-with--li">
@@ -93,7 +88,31 @@
                   </ul>
                 </div>
               </div>
-            </div> <!--end of Symposia projects box -->
+           <!-- END of Symposia projects box -->
+           
+           <!-- BEGIN of Quizzle projects box -->
+           <div class="projects__box">
+            <div class="projects__box--primary">
+              <h2 class="heading-secondary">QUIZZLE</h2>
+              <p class="paragraph">A colorful quiz app with goofy questions.</p>
+            </div>
+            <div class="projects__box--secondary">
+              <a href="https://quiz-zle.herokuapp.com/" target="_blank"><button class="button">PLAY NOW</button></a>
+              <img src="./img/quizzle.gif">
+              <div class="projects__box--links">
+                  <p>See the code:</p>
+                  <span><a href="https://github.com/mallmsy/quizzle-app" target="_blank" alt="link to front-end">Repository</a></span>
+                </div>
+              </div>
+              <div class="projects__built-with"></div>          
+                <ul class="projects__built-with--ul">
+                  <li class="projects__built-with--li">
+                    <img src="img/logos/React.png" alt="React">
+                  </li>
+                </ul>
+              </div>
+            </div>
+           <!--end of Quizzle projects box -->
 
             <div class="projects__box">
               <div class="projects__box--primary">
@@ -101,20 +120,17 @@
 
                 <p class="paragraph">A web app that allows users to build a “Top 10” list of albums, then interact through up-vote/down-vote functionality.</p>
 
-              </div>
-
               <div class="projects__box--secondary">
-
-                <div class="projects__visuals">
-                  <div class="iframe-container">
-                    <iframe alt="Top 10 video demo" src="https://www.youtube.com/embed/T9VyrHxAcek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                  <div class="projects__box--links">
-                    <p>See the code:</p>
-                    <span><a href="https://github.com/mallmsy/Top10-music-client" target="_blank" alt="link to front-end">Front-End</a></span>
-                    <span><a href="https://github.com/mallmsy/Top10-music-api" target="_blank" alt="link to back-end">Back-End</a></span>
-                  </div>
+                <div class="iframe-container">
+                  <iframe alt="Top 10 video demo" src="https://www.youtube.com/embed/T9VyrHxAcek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
+                <div class="projects__box--links">
+                  <p>See the code:</p>
+                  <span><a href="https://github.com/mallmsy/Top10-music-client" target="_blank" alt="link to front-end">Front-End</a></span>
+                  <span><a href="https://github.com/mallmsy/Top10-music-api" target="_blank" alt="link to back-end">Back-End</a>
+                  </span>
+                </div>
+              </div>
 
                 <div class="projects__built-with">
                   <ul class="projects__built-with--ul">
@@ -128,9 +144,7 @@
                       <img src="img/logos/Postgresql.png" alt="PostgreSQL">
                     </li>
                   </ul>
-
                 </div>
-
               </div>
             </div> <!--end of Top 10 projects box -->
 
