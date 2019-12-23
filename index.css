@@ -34,22 +34,20 @@ body {
 }
 
 .header-wrapper {
+  
   text-align: center;
   margin: 3rem 0;
 }
 
 .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 25rem;
 }
 
 .header__text-box {
-  position: absolute;
   width: 25rem;
-
-  top: 30%;
-  left: 40%;
-
-  transform: translate(-50%, -50%);
 }
 
 .heading-primary {
@@ -60,7 +58,8 @@ body {
 }
 
 .heading-primary--main {
-  display: block;
+  position: relative;
+  left: -3rem;
   font-size: 6.5rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
@@ -71,12 +70,13 @@ body {
 }
 
 .heading-primary--sub {
-  display: block;
+  position: relative;
+  left: -3rem;
   font-size: 2.5rem;
   margin-top: 2rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
-  line-height: 0.8;
+  line-height: 0.3;
 
   animation: moveInRight 1s ease-out;
 }
@@ -101,12 +101,12 @@ body {
 }
 
 .circles__orange {
+  position: relative;
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
-  position: absolute;
-  left: 22rem;
-  top: 11rem;
+  left: 20rem;
+  top: -9rem;
   z-index: 10;
   background-color: #FF7600;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .4);
@@ -117,12 +117,12 @@ body {
 }
 
 .circles__pink {
+  position: relative;
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
-  position: absolute;
-  left: 18rem;
-  top: 14rem;
+  left: 17rem;
+  top: -16rem;
   z-index: 10;
   background-color: #FF90AD;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .4);
@@ -133,12 +133,12 @@ body {
 }
 
 .circles__white {
+  position: relative;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  position: absolute;
   left: 23rem;
-  top: 19rem;
+  top: -21rem;
   z-index: 10;
   background-color: #FFF;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .4);
