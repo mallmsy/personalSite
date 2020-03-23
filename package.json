@@ -1,0 +1,43 @@
+{
+  "name": "MalloryWoodsDotDev",
+  "version": "1.2.0",
+  "description": "Personal site for Mallory Woods",
+  "main": "index.js",
+  "author": "Mallory Woods",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=10.16.0 < 11.0"
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "lint": "eslint .",
+    "prettier": "prettier",
+    "start": "react-scripts start"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "prettier": "^2.0.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.0.1",
+    "sass": "^1.23.0",
+    "sass-loader": "^8.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "nodemon": "^2.0.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
