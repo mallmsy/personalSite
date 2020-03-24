@@ -3,7 +3,15 @@ import React from 'react';
 const Header = () => {
   return(
     <div className="header">
-      HEADER
+      <div className="header__text-box">
+        <h1 className="heading-primary">
+          <span className="heading-primary--main">Mallory Woods</span>
+          <span className="heading-primary--sub">Full-Stack Engineer</span>
+          <div className="circles__orange"></div>
+          <div className="circles__pink"></div>
+          <div className="circles__white"></div>
+        </h1>
+      </div>
     </div>
   )
 }

@@ -8,17 +8,19 @@ import { withRouter } from 'react-router-dom';
 ////
 import Nav from './components/Nav';
 import Header from './components/Header';
-import Section from './components/Section';
+import ProjectsContainer from './components/ProjectsContainer';
+import About from './components/About';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App main">
       <Nav />
       <Header />
-      <Section className="about" />
-      <Section className="projects"/>
-      <Section className="contact" />
+      <About className="about" />
+      <ProjectsContainer className="projects"/>
+      <Contact className="contact" />
       <Footer />
     </div>
   );

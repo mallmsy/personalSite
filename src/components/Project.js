@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Project = () => {
+const Project = ({name, desc}) => {
   return(
     <div className="projects__box">
-      This Is A Project
+      <h2 className="heading-secondary">{name}</h2>
+      <p className="paragraph">{desc}</p>
     </div>
   )
 }
