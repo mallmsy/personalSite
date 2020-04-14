@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div class="footer-wrapper">
+    <div className="footer-wrapper">
       <p>designed & developed by Mallory Woods (2019)</p>
     </div>
   )

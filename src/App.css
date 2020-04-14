@@ -214,7 +214,6 @@ button:active {
 
 .projects {
   text-align: center;
-
 }
 
 .projects-wrapper {
@@ -285,6 +284,10 @@ button:active {
   color: #000;
 }
 
+.projects__image {
+  width: 60%;
+}
+
 .iframe-container{
   position: relative;
   width: 100%;
@@ -343,13 +346,10 @@ button:active {
 }
 
 .footer-wrapper {
-  display: inline-block;
-  width: 30rem;
   background-color: #FF7600;
   margin: 2rem 0;
   padding: 1rem;
   color: #fff;
-  margin-top: 5rem;
   font-size: 1rem;
   text-align: center;
 }
