@@ -44,7 +44,7 @@ button {
 
 button:hover {
 	transform: translateY(-3px);
-	box-shadow: 0 1rem 2rem rgba(0, 0 , 0,.2);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 button:active {
@@ -83,21 +83,15 @@ button:active {
   font-weight: 700;
   letter-spacing: 0.2rem;
   line-height: 0.8;
-  transition: transform .3s;
-
-  animation: moveInLeft 1s ease-out;
 }
 
 .heading-primary--sub {
   position: relative;
   left: -3rem;
+  top: 1rem;
   font-size: 2.5rem;
-  margin-top: 2rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
-  line-height: 0.3;
-
-  animation: moveInRight 1s ease-out;
 }
 
 .heading-secondary {
@@ -124,13 +118,13 @@ button:active {
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
-  left: 20rem;
+  left: 21rem;
   top: -9rem;
   z-index: 10;
   background-color: #FF7600;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .4);
   transition: all .2sec;
-
+  animation: breathe1 3s infinite;
 }
 
 .circles__pink {
@@ -139,12 +133,12 @@ button:active {
   height: 8rem;
   border-radius: 50%;
   left: 17rem;
-  top: -16rem;
+  top: -17rem;
   z-index: 10;
   background-color: #FF90AD;
-  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .4);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.4);
   transition: all .2sec;
-
+  animation: breathe2 4s infinite;
 }
 
 .circles__white {
@@ -152,12 +146,13 @@ button:active {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  left: 23rem;
-  top: -21rem;
+  left: 22rem;
+  top: -20rem;
   z-index: 10;
   background-color: #FFF;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .4);
   transition: all .2sec;
+  animation: breathe3 5s infinite;
 }
 
 .circles__white:hover,
@@ -316,7 +311,6 @@ button:active {
 }
 
 .contact__link {
-  display: inline-block;
   color: #FF90AD;
   margin-top: 5px;
 }
@@ -357,52 +351,18 @@ button:active {
 @media only screen and (max-width: 600px) {
 
   .circles__orange {
-    left: 18rem;
+    left: 20rem;
     top: -8rem;
-    animation: breathe1 3s infinite;
   }
 
   .circles__pink {
     left: 15rem;
     top: -15rem;
-    animation: breathe2 4s infinite;
-
   }
 
   .circles__white {
     left: 21rem;
     top: -20rem;
-    animation: breathe3 5s infinite;
-
-  }
-}
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-  80% {
-    transform: translateX(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-  80% {
-    transform: translateX(-1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
   }
 }
 

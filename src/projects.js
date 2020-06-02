@@ -6,12 +6,12 @@ const projects = [
   builtWith: ["React", "Redux", "Rails", "Postgresql", "Websockets"],
   repo: "https://github.com/mallmsy/symposia-client",
   demo: "https://www.youtube.com/embed/ZF81qzCQwqQ",
-  buttonText: "DEMO"
+  buttonText: "WATCH DEMO"
   },
   {
-    name: "Outbreak",
-    description: "Outbreak inspired spaceinvaders style game.",
-    image: './img/outbreak.gif',
+    name: "Quar-Bod Challenge",
+    description: "SpaceInvaders style game. Run laps, avoid the snacks!",
+    image: './img/quarbod.gif',
     builtWith: ["JS"],
     repo: "https://glitch.com/edit/#!/rambunctious-zest-hemisphere",
     demo: "https://rambunctious-zest-hemisphere.glitch.me/",
@@ -33,7 +33,7 @@ const projects = [
     builtWith: ["JS", "Rails", "Postgresql"],
     repo: "https://github.com/mallmsy/Top10-music-client",
     demo: "https://www.youtube.com/watch?v=T9VyrHxAcek",
-    buttonText: "DEMO"
+    buttonText: "WATCH DEMO"
   }
 ];
 

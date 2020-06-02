@@ -6,7 +6,7 @@ const Header = () => {
       <div className="header__text-box">
         <h1 className="heading-primary">
           <span className="heading-primary--main">Mallory Woods</span>
-          <span className="heading-primary--sub">Full-Stack Engineer</span>
+          <div className="heading-primary--sub">Full-Stack Engineer</div>
           <div className="circles__orange"></div>
           <div className="circles__pink"></div>
           <div className="circles__white"></div>
