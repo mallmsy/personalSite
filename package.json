@@ -10,8 +10,6 @@
   },
   "scripts": {
     "dev": "nodemon index.js",
-    "lint": "eslint .",
-    "prettier": "prettier",
     "start": "react-scripts start"
   },
   "dependencies": {

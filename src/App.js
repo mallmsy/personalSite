@@ -1,9 +1,5 @@
 import React from 'react';
 import './App.css';
-import { Route } from 'react-router-dom';
-
-////
-import { withRouter } from 'react-router-dom';
 
 ////
 import Nav from './components/Nav';
