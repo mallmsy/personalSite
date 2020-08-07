@@ -14,14 +14,19 @@ const Project = ({
     <div className='projects__box'>
       <h2 className='heading-secondary'>{name}</h2>
       <p className='paragraph'>{description}</p>
-      <a href={demo} target='_blank' rel="noopener noreferrer">
+      <a href={demo} target='_blank' rel='noopener noreferrer'>
         <button className='button'>{buttonText}</button>
       </a>
       <div className='projects__box--secondary'>
         <img className='projects__image' src={image} alt={name}></img>
         <div className='projects__box--links'>
           <span>
-            <a href={repo} target='_blank' rel="noopener noreferrer" alt='link to repository'>
+            <a
+              href={repo}
+              target='_blank'
+              rel='noopener noreferrer'
+              alt='link to repository'
+            >
               See the Code >>
             </a>
           </span>
